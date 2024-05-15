@@ -3,11 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Library</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Some Project</h1>
+    <header>
+        Library
+        <button class="signInBtn">Sign In</button>
+    </header>
+    <div class="main">
+        <table class="books">
+            <thead>
+                <th scope="col">Name</th>
+                <th scope="col">Author</th>
+                <th scope="col">Pages</th>
+                <th scope="col">Read</th>
+                <th></th>
+                <tr style="height: 1px">
+                    <td colspan="5">
+                        <div class="line"></div>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>Book</td>
+                    <td>Dude</td>
+                    <td>100</td>
+                    <td>Unread</td>
+                    <td>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr style="height: 1px">
+                    <td colspan="5">
+                        <div class="line"></div>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+    <button class="addBookBtn">+ Add Book</button>
+    <div class="addBook">
+        <form action="" class="addBookForm">
+            <legend>Add New Book</legend>
+            <input id="titleName" type="text" placeholder="Title" required>
+            <input type="text" id="authorname" placeholder="Author" required>
+            <input type="number" id="noOfPages" placeholder="Pages" required>
+            <div class="readBox">
+                <label for="readCheckBox">Read: </label>
+                <input id="readCheckBox" type="checkbox">
+            </div>
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
 </body>
 </html>
